@@ -1,0 +1,89 @@
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows:30% 55% 15%;
+}
+.left-top-left{
+    
+}
+.square{
+    width: 1vw;
+    height: 1vw;
+    background: black;
+    rotate: 45deg;
+    margin:2.5vw 6vw;
+}
+.left-top-right{
+    text-align:right;
+    align-self: center;
+    padding:1vw;
+    font-size: 1.1vw;
+}
+.left-top-right h4{
+    padding-bottom: 40px;
+}
+.left-top-right h5{
+    font-weight: 400;
+}
+.left-center{
+    grid-column: 1/3;
+    align-self: center;
+    padding-left:6vw;
+    text-transform: uppercase;
+}
+.left-center h1{
+    font-size: 5.2vw;
+    font-weight: 100;
+}
+.left-center h1:nth-child(2n){
+    padding-left:10vw;
+}
+.left-bottom{
+    grid-column: 1/3;
+    width: 70%;
+    font-size:.8vw;
+    padding-left:6vw;
+    align-self: center;
+}
+.right{
+    grid-column:3;
+    grid-row: 1/4;
+    padding: 2vw;
+}
+.right video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right:4vw;
+    object-position: top;
+}
+.arrow{
+    width: 4vw;
+    height:4vw ;
+    background:rgb(255, 88, 88);
+    border-radius: 5vw;
+    position: relative;
+    position: absolute;
+    top:50%;
+    left:50%;  
+}
+.arrow svg{
+    width: 2vw;
+    position:absolute;
+    top:25%;
+    left:25%;
+}
